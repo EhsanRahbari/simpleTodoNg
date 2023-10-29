@@ -1,0 +1,24 @@
+<div class="addtodo-container">
+  <!-- Adding Todo Input Parts -->
+  <label for="title">title :</label>
+  <input type="text" name="title" id="title" [(ngModel)]="todoTitle" />
+  <label for="title">description :</label>
+  <input
+    type="text"
+    name="description"
+    id="description"
+    [(ngModel)]="todoDesc"
+  />
+</div>
+<div>
+  <!-- Buttons -->
+  <button type="button" (click)="handleAddTodo()">Add Todo</button>
+  <button type="button" (click)="handleCancel()">Cancel</button>
+</div>
+
+<br />
+<app-todoitem
+  *ngFor="let todo of todoItems"
+  [title]="todo.title"
+  [description]="todo.description"
+></app-todoitem>

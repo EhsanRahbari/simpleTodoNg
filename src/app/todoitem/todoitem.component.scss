@@ -1,0 +1,12 @@
+.todo-container {
+  display: flex;
+  background-color: bisque;
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
+  height: 280px;
+  width: 280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
